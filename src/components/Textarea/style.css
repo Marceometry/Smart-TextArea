@@ -1,6 +1,4 @@
-.textarea {
-    width: 40vw;
-    height: 20vh;
+textarea {
     padding: .875rem;
     margin: 1rem 0;
 
@@ -13,33 +11,4 @@
 
     resize: none;
     outline: none;
-}
-
-/* .textarea-replace {
-    position: absolute;
-    width: 450px;
-    left: 50%;
-    top: 50px;
-    transform: translate(-50%, 0);
-    padding: 18px 18px;
-    min-height: 80px;
-    font-size: 14px;
-    color: #414141;
-    border: 1px solid #d2d2d2;
-    border-radius: 5px;
-} */
-
-.textarea:before {
-    content: attr(placeholder);
-    opacity: .7;
-    display: block; /* For Firefox */
-}
-    
-.textarea:focus {
-    outline: none;
-}
-
-.textarea:focus:before {
-    display: none;
-    content: '';
 }

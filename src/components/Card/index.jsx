@@ -30,12 +30,11 @@ export default function Card() {
             setIsValid(false)
         }
     }, [textareaLength, maxLength])
-
+    
     function setLength(text) {
         setTextareaValue(text)
         setTextareaLength(text.length)
         setRemainingLength(maxLength - text.length)
-        text[0].style.color = '#f81a1a'
     }
 
     function showText() {
