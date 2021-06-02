@@ -23,7 +23,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-<h4> Acesse em: https://marcelino-frontend.vercel.app </h4>
+<h4> Acesse em: https://smart-textarea.vercel.app </h4>
 
 Um campo de texto inteligente que alerta o usuário sobre a quantidade e o limite de caracteres.
 
