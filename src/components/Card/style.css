@@ -3,3 +3,9 @@
     border-radius: 10px;
     background: #151515;
 }
+
+footer {
+    padding: 0 .25rem;
+    display: flex;
+    justify-content: space-between;
+}

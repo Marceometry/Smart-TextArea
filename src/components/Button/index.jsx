@@ -1,12 +1,12 @@
 import './style.css'
 
-export default function Footer({ onClick, isValid, children }) {
+export default function Footer({ onClick, isValid }) {
     return (
         <button
             onClick={onClick}
             disabled={!isValid}
         >
-            {children}
+            Confirmar
         </button>
     )
 }

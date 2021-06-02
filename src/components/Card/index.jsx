@@ -1,6 +1,5 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Textarea from '../Textarea'
-import Footer from '../Footer'
 import Button from '../Button'
 import './style.css'
 
@@ -11,31 +10,32 @@ const red = '#f81a1a'
 export default function Card() {
     const [maxLength] = useState(50)
     const [remainingLength, setRemainingLength] = useState(maxLength)
+    const [textareaLength, setTextareaLength] = useState(0)
     const [textareaValue, setTextareaValue] = useState('')
     const [isValid, setIsValid] = useState(false)
     const [color, setColor] = useState(green)
 
     function setLength(text) {
         setTextareaValue(text)
+        setTextareaLength(text.length)
         setRemainingLength(maxLength - text.length)
-        checkValid(text.length)
     }
 
-    function checkValid(length) {
-        if (length === 0) {
+    useEffect(() => {
+        if (textareaLength === 0) {
             setIsValid(false)
             setColor(green)
-        } else if (length > 0 && length < maxLength - maxLength/10) {
+        } else if (textareaLength > 0 && textareaLength < maxLength - maxLength/10) {
             setIsValid(true)
             setColor(green)
-        } else if (length >= maxLength - maxLength/10 && length <= maxLength) {
+        } else if (textareaLength >= maxLength - maxLength/10 && textareaLength <= maxLength) {
             setIsValid(true)
             setColor(yellow)
-        } else if (length > maxLength) {
+        } else if (textareaLength > maxLength) {
             setColor(red)
             setIsValid(false)
         }
-    }
+    }, [textareaLength, maxLength])
 
     function showText() {
         alert(textareaValue)
@@ -47,11 +47,13 @@ export default function Card() {
 
             <Textarea onChange={setLength} maxLength={maxLength} />
 
-            <Footer remainingLength={remainingLength} color={color}>
-                <Button onClick={showText} isValid={isValid}>
-                    Confirmar
-                </Button>
-            </Footer>
+            <footer>
+                <span style={{color: color}}>
+                    {remainingLength}
+                </span>
+
+                <Button onClick={showText} isValid={isValid} />
+            </footer>
         </div>
     )
 }
