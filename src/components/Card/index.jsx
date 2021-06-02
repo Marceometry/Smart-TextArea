@@ -15,12 +15,6 @@ export default function Card() {
     const [isValid, setIsValid] = useState(false)
     const [color, setColor] = useState(green)
 
-    function setLength(text) {
-        setTextareaValue(text)
-        setTextareaLength(text.length)
-        setRemainingLength(maxLength - text.length)
-    }
-
     useEffect(() => {
         if (textareaLength === 0) {
             setIsValid(false)
@@ -36,6 +30,13 @@ export default function Card() {
             setIsValid(false)
         }
     }, [textareaLength, maxLength])
+
+    function setLength(text) {
+        setTextareaValue(text)
+        setTextareaLength(text.length)
+        setRemainingLength(maxLength - text.length)
+        text[0].style.color = '#f81a1a'
+    }
 
     function showText() {
         alert(textareaValue)
