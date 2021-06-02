@@ -1,13 +1,13 @@
 import './style.css'
 
-export default function Footer({ onClick, remainingLength, color, isValid }) {
+export default function Footer({ remainingLength, color, children }) {
     return (
         <footer>
-            <p>
-                Caracteres restantes: <span style={{color: color}}> {remainingLength} </span>
-            </p>
+            <span style={{color: color}}>
+                {remainingLength}
+            </span>
 
-            <button onClick={onClick} disabled={!isValid}> Confirmar </button>
+            {children}
         </footer>
     )
 }

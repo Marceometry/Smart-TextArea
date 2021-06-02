@@ -3,24 +3,3 @@ footer {
     display: flex;
     justify-content: space-between;
 }
-
-footer button {
-    padding: .5rem 1rem;
-    color: #fff;
-    font-size: 1.125rem;
-
-    background: #1696e6;
-    border-radius: 5px;
-    border: none;
-
-    transition: all .2s;
-}
-
-footer button:hover:not(:disabled) {
-    background: #077ac2;
-    cursor: pointer;
-}
-
-footer button:disabled {
-    opacity: .5;
-}
