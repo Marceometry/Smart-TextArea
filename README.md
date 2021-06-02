@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+<h1 align="center"> Portfólio </h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>
+</p>
 
-## Available Scripts
+<br>
 
-In the project directory, you can run:
+<p align="center">
+  <img alt="Project Mockup" src=".github/mockup.png" width="100%">
+</p>
 
-### `yarn start`
+## 🚀 Tecnologias
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [React](https://reactjs.org)
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [MongoDB](https://www.mongodb.com/1)
+- [Sass](https://sass-lang.com/)
 
-### `yarn test`
+## 💻 Projeto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`(ainda em processo de construção)`
 
-### `yarn build`
+<h4> Acesse em: https://marcelino-frontend.vercel.app </h4>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Este site foi pensado para ser feito com um design mais moderno do que a versão anterior do meu portfólio, e também foi desenvolvido para que eu pudesse aprender mais sobre [React](https://reactjs.org), [Next.js](https://nextjs.org/), webdesign, animações css, entre outros assuntos envolvendo o FrontEnd. Aqui, foram utilizados recursos como o [Nprogress](https://ricostacruz.com/nprogress/) para ilustrar o carregamento entre as páginas, o [React-Scroll](https://github.com/fisshy/react-scroll) para realizar scrolls suaves ao clicar na barra de navegação, entre outros detalhes que melhoram a experiência do usuário. Como banco de dados para armazenar as informações dos meus projetos, utilizei o [MongoDB](https://www.mongodb.com/1), pegando as informações através do método getStaticProps do [Next.js](https://nextjs.org/), e gerando as páginas individuais usando o getStaticPaths em conjunto, pois assim o carregamento das páginas se torna praticamente instantâneo, sem a necessidade de fazer requisições ao banco de dados toda vez que as páginas são acessadas.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🔖 Layout
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/JulJQK2kpLXpexpcqQNiwU/Portfolio). É necessário ter conta no [Figma](http://figma.com/) para acessá-lo.
 
-### `yarn eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h4 align="center"> Feito com ♥ por Marcelino Teixeira </h4>
