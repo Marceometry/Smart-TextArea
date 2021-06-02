@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: #101010;
+    color: #d9d9d9;
+    font: 1rem Inter, sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
