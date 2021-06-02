@@ -30,8 +30,9 @@ Um campo de texto inteligente que alerta o usuário sobre a quantidade e o limit
 ## 🚀 Funcionalidades
 
 - Contagem de caracteres
+- Costumização do máximo de caracteres
 - Alteração da cor do contador baseado na quantidade de caracteres restantes
-- Botão de submit que alerta o texto digitado caso a quantidade de caracteres for aceita
+- Botão de submit que mostra o texto digitado caso a quantidade de caracteres for aceita
 
 ## 🚀 Como executar
 
