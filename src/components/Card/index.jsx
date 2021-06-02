@@ -8,7 +8,7 @@ const yellow = '#ebdc14'
 const red = '#f81a1a'
 
 export default function Card() {
-    const [maxLength] = useState(50)
+    const [maxLength, setMaxLength] = useState(50)
     const [remainingLength, setRemainingLength] = useState(maxLength)
     const [textareaLength, setTextareaLength] = useState(0)
     const [textareaValue, setTextareaValue] = useState('')
@@ -30,11 +30,16 @@ export default function Card() {
             setIsValid(false)
         }
     }, [textareaLength, maxLength])
-    
+
     function setLength(text) {
         setTextareaValue(text)
         setTextareaLength(text.length)
         setRemainingLength(maxLength - text.length)
+    }
+
+    function setMax(max) {
+        setMaxLength(max)
+        setRemainingLength(max - textareaLength)
     }
 
     function showText() {
@@ -43,9 +48,16 @@ export default function Card() {
 
     return (
         <div className="card">
-            <h1>Digite o texto aqui</h1>
+            <header>
+                <h1>Digite o texto aqui</h1>
 
-            <Textarea onChange={setLength} maxLength={maxLength} />
+                <div>
+                    <label htmlFor="alterar-max">Alterar Máx.:</label>
+                    <input type="number" name="alterar-max" placeholder="50" onChange={(e) => setMax(e.target.value)} />
+                </div>
+            </header>
+
+            <Textarea onChange={setLength} maxLength={maxLength} borderRed={remainingLength < 0} />
 
             <footer>
                 <span style={{color: color}}>
