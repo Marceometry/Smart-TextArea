@@ -14,3 +14,22 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #202020;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #151515;
+  border-radius: 8px;
+  transition: .2s;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #131313;
+}
