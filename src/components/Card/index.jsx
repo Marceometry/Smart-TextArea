@@ -45,7 +45,7 @@ export default function Card() {
         <div className="card">
             <h1>Digite o texto aqui</h1>
 
-            <Textarea onChange={setLength} />
+            <Textarea onChange={setLength} maxLength={maxLength} />
 
             <Footer remainingLength={remainingLength} color={color}>
                 <Button onClick={showText} isValid={isValid}>
