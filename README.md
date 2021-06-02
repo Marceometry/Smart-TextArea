@@ -23,7 +23,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-<h4> Acesse em: <a target="_blank" href="https://smart-textarea.vercel.app">https://smart-textarea.vercel.app</a> </h4>
+<h4> Acesse <a target="_blank" href="https://smart-textarea.vercel.app">aqui</a> </h4>
 
 Um campo de texto inteligente que alerta o usuário sobre a quantidade e o limite de caracteres.
 
